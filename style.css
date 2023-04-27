@@ -88,6 +88,20 @@ button:active{
 
 }
 
+#error{
+    color: #ff0000;
+    font-weight: bold;
+    display: none;
+}
+
+.resultado{
+    color: #111111;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 5px;
+    display: none;
+}
+
 @media(max-width:991px){
     body{
         padding: 30px;
@@ -101,5 +115,5 @@ button:active{
         width: 50%;
         padding: 35px;
     }
-    
+
 }
