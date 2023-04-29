@@ -1,11 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
+    <meta charset="UTF-8">
     <title>Calculadora de Hidratación</title>
     <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet"  href="toggle.css"/>
     <script src="script.js" defer></script>
   </head>
   <body>
+    <div id="container">
+      <div class="toggle"></div>
+    </div>
+    <script src="toggle.js"></script>
     <div id="contenedor">
       <div id="calculadora">
         <div class="contenido">
@@ -13,22 +19,32 @@
         <p class="item" id="error">Completa todos los datos</p>
         <input class="item" id="peso" type="number" placeholder="Peso en kg">
         <button class="item" id="calcular">CALCULAR</button>
-        <p class="item resultado" id="flu">70cc/h</p>
-        <p class="item resultado" id="man">m+m/2 : 105cc/h</p>
+        <p class="item resultados" id="vol">70cc</p>
+        <p class="item resultad" id="sc1">70cc</p>
+        <p class="item resultad" id="sc2">70cc</p>
+        <p class="item resultados" id="man">105cc/hr</p>
+        <p class="item resultados" id="mm2">105cc/hr</p>
+        <p class="item método" id="mét1">Método Holliday-Segar</p>
+        <p class="item método" id="mét2">Método Superficie Corporal</p>
         </div>
       </div>
       <div  id="detalle">
         <div class="contenid2">
           <h1>¿Cómo se calcula?</h1>
-          <ul>
+          <ul class="segar" id="1">
           <li>De 0kg a 10kg, se calcula 100cc por cada kilo</li>
           <li>Se suman 50cc por cada kilo de peso por arriba de 10kg, hasta 20kg</li>
           <li>De 20kg para arriba, se suman 20cc por cada kilo adicional</li>
           </ul>
+          <ul class="corporal" id="2">
+            <li>Cuando el peso es más de 30kg, se utiliza un cálculo</li>
+            <li>Superficie corporal = ( (peso * 4) + 7) / (peso + 90)</li>
+            <li>Este resultado se multiplica por 1500 o por 2000 para hallar el valor del volumen diario en cc</li>
+          </ul>
         </div>
-
       </div>
-     
-    </div> 
+
+    </div>
+
   </body>
 </html>

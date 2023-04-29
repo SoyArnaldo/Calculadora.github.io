@@ -5,11 +5,13 @@ body{
     align-items: center;
     min-height: 100vh;
 }
+
 #contenedor{
     display: flex;
     box-shadow: 0 0 20px #4bc7d4b3;
     border-radius: 25px;
     width: 900px;
+    background-color: #ffffff;
 }
 #calculadora{
     width: 50%;
@@ -64,6 +66,18 @@ input{
     color: #ffffff;
 }
 
+.contenid2 ul.segar{
+    display: none;
+     
+}
+
+
+.contenid2 ul.corporal{
+    display: none;
+    font-size: 18px;
+    color: #ffffff;
+}
+
 button{
     font-size: 15px;
     font-weight: bold;
@@ -94,11 +108,26 @@ button:active{
     display: none;
 }
 
-.resultado{
+.resultados{
     color: #111111;
     font-weight: bold;
     font-size: 25px;
     margin-bottom: 5px;
+    display: none;
+}
+
+.resultad{
+    color: #111111;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 5px;
+    display: none;
+}
+
+.método{
+    font-weight: bold;
+    color: #4eaffd;
+    margin-top: 10%;
     display: none;
 }
 
